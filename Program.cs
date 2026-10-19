@@ -1,17 +1,7 @@
 ﻿string opcion;
 do
 {
-
-Console.WriteLine("=======================================");
-Console.WriteLine("    SISTEMA ADMINISTRATIVO DUO DENTIC");
-Console.WriteLine("=======================================");
-Console.WriteLine();
-Console.WriteLine("1. Registrar expediente");
-Console.WriteLine("2. Buscar expediente");
-Console.WriteLine("3. Listar expedientes");
-Console.WriteLine("4. Ordenar expedientes");
-Console.WriteLine("5. Guardar expedientes");
-Console.WriteLine("0. Salir");
+MostrarMenu();
 Console.WriteLine();
 Console.Write("Seleccione una opción: ");
 opcion = Console.ReadLine() ?? "";
@@ -41,3 +31,16 @@ switch (opcion)
         break;
 }
 }while (opcion != "0");
+static void MostrarMenu()
+{
+    Console.WriteLine("=======================================");
+    Console.WriteLine("    SISTEMA ADMINISTRATIVO DUO DENTIC");
+    Console.WriteLine("=======================================");
+    Console.WriteLine();
+    Console.WriteLine("1. Registrar expediente");
+    Console.WriteLine("2. Buscar expediente");
+    Console.WriteLine("3. Listar expedientes");
+    Console.WriteLine("4. Ordenar expedientes");
+    Console.WriteLine("5. Almacenar expedientes");
+    Console.WriteLine("0. Salir");
+}
