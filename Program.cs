@@ -8,3 +8,7 @@ Console.WriteLine("3. Listar expedientes");
 Console.WriteLine("4. Ordenar expedientes");
 Console.WriteLine("5. Guardar expedientes");
 Console.WriteLine("0. Salir");
+Console.WriteLine();
+Console.Write("Seleccione una opción: ");
+string opcion = Console.ReadLine() ?? "";
+Console.WriteLine("Usted seleccionó la opción: " + opcion);
