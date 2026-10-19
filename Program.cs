@@ -1,4 +1,8 @@
-﻿Console.WriteLine("=======================================");
+﻿string opcion;
+do
+{
+
+Console.WriteLine("=======================================");
 Console.WriteLine("    SISTEMA ADMINISTRATIVO DUO DENTIC");
 Console.WriteLine("=======================================");
 Console.WriteLine();
@@ -10,7 +14,7 @@ Console.WriteLine("5. Guardar expedientes");
 Console.WriteLine("0. Salir");
 Console.WriteLine();
 Console.Write("Seleccione una opción: ");
-string opcion = Console.ReadLine() ?? "";
+opcion = Console.ReadLine() ?? "";
 
 switch (opcion)
 {
@@ -36,3 +40,4 @@ switch (opcion)
         Console.WriteLine("Opción inválida. Por favor, seleccione una opción válida.");
         break;
 }
+}while (opcion != "0");
