@@ -1,6 +1,19 @@
-﻿string opcion;
+﻿using DuoDenticFUNPRO.Models;
+List<Expediente> expedientes = new List<Expediente>();
+
+Expediente prueba = new Expediente();
+
+prueba.Codigo = "EXP001";
+prueba.TipoSolicitud = "Solicitud administrativa";
+prueba.Descripcion = "Solicitud de registro de paciente";
+prueba.Estado = "Pendiente";
+
+expedientes.Add(prueba);
+
+string opcion;
 do
 {
+    Console.WriteLine("Expedientes registrados: " + expedientes.Count);
 MostrarMenu();
 Console.WriteLine();
 Console.Write("Seleccione una opción: ");
