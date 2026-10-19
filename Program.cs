@@ -11,4 +11,28 @@ Console.WriteLine("0. Salir");
 Console.WriteLine();
 Console.Write("Seleccione una opción: ");
 string opcion = Console.ReadLine() ?? "";
-Console.WriteLine("Usted seleccionó la opción: " + opcion);
+
+switch (opcion)
+{
+    case "1":
+        Console.WriteLine("Modulo de registro de expedientes en desarrollo...");
+        break;
+    case "2":
+        Console.WriteLine("Modulo de búsqueda de expedientes en desarrollo...");
+        break;
+    case "3":
+        Console.WriteLine("Modulo de listado de expedientes en desarrollo...");
+        break;
+    case "4":
+        Console.WriteLine("Modulo de ordenamiento de expedientes en desarrollo...");
+        break;
+    case "5":
+        Console.WriteLine("Modulo de almacenamiento de expedientes en desarrollo...");
+        break;
+    case "0":
+        Console.WriteLine("Saliendo del sistema...");
+        break;
+    default:
+        Console.WriteLine("Opción inválida. Por favor, seleccione una opción válida.");
+        break;
+}
