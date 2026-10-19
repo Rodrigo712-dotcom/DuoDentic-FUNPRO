@@ -1,1 +1,10 @@
-﻿Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("=======================================");
+Console.WriteLine("    SISTEMA ADMINISTRATIVO DUO DENTIC");
+Console.WriteLine("=======================================");
+Console.WriteLine();
+Console.WriteLine("1. Registrar expediente");
+Console.WriteLine("2. Buscar expediente");
+Console.WriteLine("3. Listar expedientes");
+Console.WriteLine("4. Ordenar expedientes");
+Console.WriteLine("5. Guardar expedientes");
+Console.WriteLine("0. Salir");
