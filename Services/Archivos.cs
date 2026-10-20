@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,6 +10,7 @@ namespace DuoDenticFUNPRO.Services
     {
         public void GuardarExpedientes(List<Expediente> expedientes)
         {
+            Console.WriteLine("Modulo de guardado de expedientes");
             string ruta = "expedientes.txt";
 
             try
