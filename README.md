@@ -3,7 +3,7 @@ Proyecto del curso de Fundamentos de la Programación
 
 Desarrollo de un prototipo de gestión de expedientes administrativos para la clínica DuoDentic.
 
-Lenguaje: C#
+Lenguaje: Python
 
 Entorno de Desarrollo: Visual Studio Code
 
