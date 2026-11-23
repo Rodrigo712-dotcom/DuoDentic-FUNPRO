@@ -60,3 +60,17 @@ def ordenar_por_codigo(almacen):
             j -= 1
         for pos in range(len(expediente.CAMPOS)):
             almacen[expediente.CAMPOS[pos]][j + 1] = clave[pos]
+
+
+def listar(almacen):
+    """Imprime un cuadro resumen de todos los expedientes."""
+    n = expediente.total(almacen)
+    if n == 0:
+        print("No hay expedientes registrados.")
+        return
+    print(f"\n{'CODIGO':<8}{'TIPO':<22}{'ESTADO':<12}{'FECHA':<17}DESCRIPCION")
+    print("-" * 80)
+    for i in range(n):
+        cod, tipo, desc, estado, fecha = expediente.obtener(almacen, i)
+        print(f"{cod:<8}{tipo[:20]:<22}{estado:<12}{fecha:<17}{desc[:30]}")
+    print(f"\nTotal: {n} expediente(s).")
