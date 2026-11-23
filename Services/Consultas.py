@@ -45,3 +45,18 @@ def buscar(almacen, codigo):
     if esta_ordenado(almacen):
         return busqueda_binaria(almacen, codigo), "binaria"
     return busqueda_secuencial(almacen, codigo), "secuencial"
+
+
+def ordenar_por_codigo(almacen):
+    """Ordenamiento por insercion sobre TODOS los arreglos paralelos,
+    para que cada expediente conserve sus datos. Costo O(n^2)."""
+    n = expediente.total(almacen)
+    for i in range(1, n):
+        clave = expediente.obtener(almacen, i)   # tupla completa del expediente
+        j = i - 1
+        while j >= 0 and almacen["codigo"][j] > clave[0]:
+            for campo in expediente.CAMPOS:      # desplazar todos los campos
+                almacen[campo][j + 1] = almacen[campo][j]
+            j -= 1
+        for pos in range(len(expediente.CAMPOS)):
+            almacen[expediente.CAMPOS[pos]][j + 1] = clave[pos]
