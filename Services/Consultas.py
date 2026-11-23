@@ -22,3 +22,18 @@ def esta_ordenado(almacen):
             return False
     return True
 
+
+def busqueda_binaria(almacen, codigo):
+    """Requiere arreglo ordenado. Devuelve la posicion o -1. Costo O(log n)."""
+    inferior = 0
+    superior = expediente.total(almacen) - 1
+    while inferior <= superior:
+        medio = (inferior + superior) // 2
+        actual = almacen["codigo"][medio]
+        if actual == codigo:
+            return medio
+        if actual < codigo:
+            inferior = medio + 1
+        else:
+            superior = medio - 1
+    return -1
