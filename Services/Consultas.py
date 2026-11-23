@@ -37,3 +37,11 @@ def busqueda_binaria(almacen, codigo):
         else:
             superior = medio - 1
     return -1
+
+
+def buscar(almacen, codigo):
+    """Elige el algoritmo: binaria si esta ordenado, secuencial si no.
+    Devuelve (indice, nombre_del_metodo)."""
+    if esta_ordenado(almacen):
+        return busqueda_binaria(almacen, codigo), "binaria"
+    return busqueda_secuencial(almacen, codigo), "secuencial"
