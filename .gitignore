@@ -2,3 +2,7 @@ bin/
 obj/
 .vs/
 .vscode/
+__pycache__/
+*.pyc
+expedientes.txt
+cancel
