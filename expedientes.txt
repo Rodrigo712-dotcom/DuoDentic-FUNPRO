@@ -1,0 +1,4 @@
+EXP001|Registro de paciente|Primera evaluación y registro de un nuevo paciente.|Pendiente|2026-11-23 21:03
+EXP002|Limpieza dental|Solicitud de programación de limpieza dental.|Pendiente|2026-11-23 21:04
+EXP003|Tratamiento odontológico|Solicitud de seguimiento de tratamiento dental.|Pendiente|2026-11-23 21:05
+EXP004|Atención Administrativa|Actualización de información del paciente.|Pendiente|2026-11-23 21:06
