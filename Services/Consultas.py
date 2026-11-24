@@ -4,7 +4,7 @@ consultas.py - Busqueda, ordenamiento y listado.
 Los algoritmos estan escritos a mano (sin sorted()/index()) para evidenciar
 la logica pedida en el curso (Tema 3: insercion, busqueda y ordenamiento).
 """
-from Modelos import Expediente as expediente
+from Models import Expediente as expediente
 
 
 def busqueda_secuencial(almacen, codigo):

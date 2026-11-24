@@ -1,7 +1,7 @@
 from datetime import datetime
 
-import expediente
-import validaciones as val
+from Models import Expediente as expediente
+from Services import Validaciones as val
 
 
 def registrar_expediente(almacen, codigo, tipo, descripcion):

@@ -6,8 +6,8 @@ Formato: una linea por expediente, campos separados por '|':
 Se eligio TXT (y no binario) porque es legible, facil de revisar
 y suficiente para el volumen del prototipo (Tema 5).
 """
-import expediente
-import validaciones as val
+from Models import Expediente as expediente
+from Services import Validaciones as val
 
 RUTA_POR_DEFECTO = "expedientes.txt"
 
@@ -51,5 +51,3 @@ def cargar(almacen, ruta=RUTA_POR_DEFECTO):
     except FileNotFoundError:
         pass   # primera ejecucion: aun no existe el archivo
     return cargados, omitidos
-
-
